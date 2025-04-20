@@ -7,8 +7,8 @@ Each folder includes the genome input, analysis outputs, and a summary of findin
 ## 🧬 Bacteria Covered
 
 - [Staphylococcus aureus](./Staphylococcus_aureus) 
-- [Escherichia coli](./Escherichia_coli) (work pending)
-- [Klebsiella pneumoniae](./Klebsiella_pneumoniae) (work pending)
+- [Escherichia coli](./Escherichia_coli)
+- [Klebsiella pneumoniae](./Klebsiella_pneumoniae) 
 
 ## 🛠 Tools Used
 
