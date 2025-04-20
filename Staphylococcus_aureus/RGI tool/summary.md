@@ -1,14 +1,14 @@
 
 # AMR Summary: Staphylococcus aureus
 
-## 📄 Input
+## Input
 - Annotated protein sequences: `Saureus_annotation.faa`
 
-## 🧪 Analysis Tools
+## Analysis Tools
 - RGI Online Tool (CARD Database)
 - Python (pandas, matplotlib, seaborn) for visualization
 
-## 📊 Key Findings
+## Key Findings
 - 19 resistance genes detected
 - Most common drug classes:
   - Fluoroquinolones
@@ -16,6 +16,6 @@
   - Glycopeptides
 - Common mechanisms: Efflux, inactivation, target alteration
 
-## 📁 Files
+## Files
 - `input_data/` - contains input `.faa` file
 - `results/` - contains RGI output and drug class plots
