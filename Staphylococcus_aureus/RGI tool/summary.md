@@ -18,4 +18,4 @@
 
 ## 📁 Files
 - `input_data/` - contains input `.faa` file
-- `results/` - contains RGI output and AMR gene plots
+- `results/` - contains RGI output and drug class plots
