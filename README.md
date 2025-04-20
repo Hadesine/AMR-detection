@@ -19,4 +19,5 @@ Each folder includes the genome input, analysis outputs, and a summary of findin
 - BWA (reference alignment)
 - Prokka (genome annotation)
 - CARD database - RGI (Resistance Gene Identifier)
+- AMRFinderplus - (AMR gene identification)
 - Python -pandas matplotlib seaborn (visualization)
