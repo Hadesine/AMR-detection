@@ -1,0 +1,16 @@
+Gene,Drug Class,Resistance Mechanism,Method,% Identity,% Coverage
+kdpD,aminoglycoside antibiotic,antibiotic efflux,protein homolog model,98.76,100
+sepA,disinfecting agents and antiseptics,antibiotic efflux,protein homolog model,96.13,98.73
+Staphylococcus aureus norA,fluoroquinolone antibiotic,antibiotic efflux,protein homolog model,99.74,100
+mgrA,fluoroquinolone antibiotic; cephalosporin; penicillin beta-lactam; tetracycline antibiotic; peptide antibiotic; disinfecting agents and antiseptics,antibiotic efflux,protein homolog model,100,100
+sdrM,fluoroquinolone antibiotic; disinfecting agents and antiseptics,antibiotic efflux,protein homolog model,100,100
+norC,fluoroquinolone antibiotic; disinfecting agents and antiseptics,antibiotic efflux,protein homolog model,98.92,100
+arlR,fluoroquinolone antibiotic; disinfecting agents and antiseptics,antibiotic efflux,protein homolog model,100,100
+arlS,fluoroquinolone antibiotic; disinfecting agents and antiseptics,antibiotic efflux,protein homolog model,100,100
+norC,fluoroquinolone antibiotic; disinfecting agents and antiseptics,antibiotic efflux,protein homolog model,71.08,100.22
+vanT gene in vanG cluster,glycopeptide antibiotic,antibiotic target alteration,protein homolog model,33.88,53.65
+mepA,glycylcycline; tetracycline antibiotic,antibiotic efflux,protein homolog model,100,100
+mepR,glycylcycline; tetracycline antibiotic,antibiotic efflux,protein homolog model,100,100
+Staphylococcus aureus LmrS,macrolide antibiotic; aminoglycoside antibiotic; oxazolidinone antibiotic; diaminopyrimidine antibiotic; phenicol antibiotic,antibiotic efflux,protein homolog model,99.58,100
+mecA,penicillin beta-lactam,antibiotic target replacement,protein homolog model,99.7,100
+Staphylococcus aureus FosB,phosphonic acid antibiotic,antibiotic inactivation,protein homolog model,100,100
