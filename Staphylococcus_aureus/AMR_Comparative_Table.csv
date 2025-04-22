@@ -1,0 +1,22 @@
+Gene,Tool,Drug Class,Subclass,Method,% Identity,% Coverage,Resistance Mechanism
+Staphylococcus aureus FosB,RGI,phosphonic acid antibiotic,,protein homolog model,100,100,antibiotic inactivation
+Staphylococcus aureus LmrS,RGI,macrolide antibiotic; aminoglycoside antibiotic; oxazolidinone antibiotic; diaminopyrimidine antibiotic; phenicol antibiotic,,protein homolog model,99.58,100,antibiotic efflux
+Staphylococcus aureus norA,RGI,fluoroquinolone antibiotic,,protein homolog model,99.74,100,antibiotic efflux
+arlR,RGI,fluoroquinolone antibiotic; disinfecting agents and antiseptics,,protein homolog model,100,100,antibiotic efflux
+arlS,RGI,fluoroquinolone antibiotic; disinfecting agents and antiseptics,,protein homolog model,100,100,antibiotic efflux
+fosB,AMRFinderPlus,FOSFOMYCIN,FOSFOMYCIN,EXACTP,100,100,
+gyrA_S84L,AMRFinderPlus,QUINOLONE,QUINOLONE,POINTP,99.77,100,
+kdpD,RGI,aminoglycoside antibiotic,,protein homolog model,98.76,100,antibiotic efflux
+mecA,AMRFinderPlus,BETA-LACTAM,METHICILLIN,EXACTP,100,100,
+mecA,RGI,penicillin beta-lactam,,protein homolog model,99.7,100,antibiotic target replacement
+mepA,RGI,glycylcycline; tetracycline antibiotic,,protein homolog model,100,100,antibiotic efflux
+mepR,RGI,glycylcycline; tetracycline antibiotic,,protein homolog model,100,100,antibiotic efflux
+mgrA,RGI,fluoroquinolone antibiotic; cephalosporin; penicillin beta-lactam; tetracycline antibiotic; peptide antibiotic; disinfecting agents and antiseptics,,protein homolog model,100,100,antibiotic efflux
+murA_G257D,AMRFinderPlus,FOSFOMYCIN,FOSFOMYCIN,POINTP,99.76,100,
+norC,RGI,fluoroquinolone antibiotic; disinfecting agents and antiseptics,,protein homolog model,98.92,100,antibiotic efflux
+norC,RGI,fluoroquinolone antibiotic; disinfecting agents and antiseptics,,protein homolog model,71.08,100.22,antibiotic efflux
+parC_S80Y,AMRFinderPlus,QUINOLONE,QUINOLONE,POINTP,99.5,100,
+sdrM,RGI,fluoroquinolone antibiotic; disinfecting agents and antiseptics,,protein homolog model,100,100,antibiotic efflux
+sepA,RGI,disinfecting agents and antiseptics,,protein homolog model,96.13,98.73,antibiotic efflux
+tet(38),AMRFinderPlus,TETRACYCLINE,TETRACYCLINE,BLASTP,100,100,
+vanT gene in vanG cluster,RGI,glycopeptide antibiotic,,protein homolog model,33.88,53.65,antibiotic target alteration
