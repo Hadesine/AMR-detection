@@ -1,0 +1,7 @@
+Gene,Gene name,Drug Class,Subclass,Detection Method,% Identity,% Coverage
+mecA,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA,BETA-LACTAM,METHICILLIN,EXACTP,100,100
+murA_G257D,Staphylococcus aureus fosfomycin resistant MurA,FOSFOMYCIN,FOSFOMYCIN,POINTP,99.76,100
+fosB,FosB/FosD family fosfomycin resistance bacillithiol transferase,FOSFOMYCIN,FOSFOMYCIN,EXACTP,100,100
+gyrA_S84L,Staphylococcus aureus quinolone resistant GyrA,QUINOLONE,QUINOLONE,POINTP,99.77,100
+parC_S80Y,Staphylococcus aureus quinolone resistant ParC,QUINOLONE,QUINOLONE,POINTP,99.5,100
+tet(38),tetracycline efflux MFS transporter Tet(38),TETRACYCLINE,TETRACYCLINE,BLASTP,100,100
