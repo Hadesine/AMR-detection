@@ -16,7 +16,7 @@ Each folder includes the genome input, analysis outputs, and a summary of findin
 - FastQC (quality control)
 - Trimmomatic (read trimming)
 - MEGAHIT (genome assemble), Quast (assessing assembly quality), seqtk (removing short contigs)
-- BWA (reference alignment)
+- BWA (reference alignment)n Qualimap (assessing quality of alignment)
 - Prokka (genome annotation)
 - CARD database - RGI (Resistance Gene Identifier)
 - AMRFinderplus - (AMR gene identification)
