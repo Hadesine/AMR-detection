@@ -15,7 +15,7 @@ Each folder includes the genome input, analysis outputs, and a summary of findin
 - NCBI SRA Toolkit (data retrival)
 - FastQC (quality control)
 - Trimmomatic (read trimming)
-- MEGAHIT (genome assemble)
+- MEGAHIT (genome assemble), Quast (assessing assembly quality), seqtk (removing short contigs)
 - BWA (reference alignment)
 - Prokka (genome annotation)
 - CARD database - RGI (Resistance Gene Identifier)
