@@ -1,0 +1,58 @@
+# NCBI SRA database (E.g. Staphylococcus aureus)
+$ prefetch SRR31001868
+
+# FASTQC
+$ fastq-dump SRR31001868
+$ fastq-dump --split-files SRR31001868
+$ fastqc SRR31001868_1.fastq SRR31001868_2.fastq
+
+# TRIMMOMATIC
+$ trimmomatic PE -phred33 \
+SRR31001868_1.fastq SRR31001868_2.fastq \
+SRR31001868_1_paired.fastq SRR31001868_1_unpaired.fastq \
+SRR31001868_2_paired.fastq SRR31001868_2_unpaired.fastq \
+ILLUMINACLIP:Truseq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+# MEGAHIT
+$ megahit -1 SRR31001868_1_paired.fastq -2 SRR31001868_2_paired.fastq -o megahit_output
+
+# QUAST
+$ quast megahit_output/final.contigs.fa -o quast_output
+
+# seqtk
+seqtk seq -L 500 megahit_output/final.contigs.fa > megahit_output/filtered_contigs.fa
+
+# Downlaoding reference genome
+$ 'Staphylococcus aureus' --reference --filename Saureus_dataset.zip
+$ unzip Saureus_dataset -d Saureus_genome
+
+# Bowtie2
+$ bowties -build Saureus_genome.fna Saureus_genome_index
+$ -x Saureus_genome_index -1 SRR31001868_1_paired.fastq -2 SRR31001868_2_paired.fastq -S bowtie2_output.sam
+
+# BWA (alignment of raw reads against a reference genome)
+$ bwa index Saureus_genome.fna
+$ bwa mem -t 8 Saureus_genome.fna SRR31001868_1_paired.fastq SRR31001868_2_paired.fastq > ref_vs_reads.sam
+
+#Convert SAM to BAM
+$ samtools view -b5 ref_vs_reads.bam > ref_vs_reads.bam
+$ samtools sort ref_vs_reads.bam -o ref_vs_reads_sorted.bam
+$ samtools index ref_vs_reads.bam
+
+# MAPQ
+$ samtools view -q 30 -b ref_vs_reads.bam > mapq_ref_vs_reads.bam
+
+# Qualimap 
+$ qualimap bamqc -bam ref_vs_reads.bam -outdir qualimap_report
+
+# Prokka
+$ prokka --outdir prokka_output \
+         --prefix Saureus_annotation \
+         --kingdom Bateria \
+         --genus Staphylococcus \
+         --species aureus \
+         --cpus 4 \
+         megahit_output/final.contigs.fa
+
+# AMRFinderPlus
+$amrfinder -p prokka_output/Saureus_annotation.faa -o amrfinder_output.tsv - O "Staphylococcus aureus"
