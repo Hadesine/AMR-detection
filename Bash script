@@ -27,7 +27,7 @@ $ datasets download genome taxon "Staphylococcus aureus" --reference --filename 
 $ unzip Saureus_dataset -d Saureus_genome
 
 # Bowtie2
-$ bowties -build Saureus_genome.fna Saureus_genome_index
+$ bowtie2 -build Saureus_genome.fna Saureus_genome_index
 $ -x Saureus_genome_index -1 SRR31001868_1_paired.fastq -2 SRR31001868_2_paired.fastq -S bowtie2_output.sam
 
 # BWA (alignment of raw reads against a reference genome)
@@ -35,9 +35,9 @@ $ bwa index Saureus_genome.fna
 $ bwa mem -t 8 Saureus_genome.fna SRR31001868_1_paired.fastq SRR31001868_2_paired.fastq > ref_vs_reads.sam
 
 #Convert SAM to BAM
-$ samtools view -b5 ref_vs_reads.bam > ref_vs_reads.bam
+$ samtools view -bS ref_vs_reads.bam > ref_vs_reads.bam
 $ samtools sort ref_vs_reads.bam -o ref_vs_reads_sorted.bam
-$ samtools index ref_vs_reads.bam
+$ samtools index ref_vs_reads_sorted.bam
 
 # MAPQ
 $ samtools view -q 30 -b ref_vs_reads.bam > mapq_ref_vs_reads.bam
