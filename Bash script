@@ -23,7 +23,7 @@ $ quast megahit_output/final.contigs.fa -o quast_output
 seqtk seq -L 500 megahit_output/final.contigs.fa > megahit_output/filtered_contigs.fa
 
 # Downlaoding reference genome
-$ 'Staphylococcus aureus' --reference --filename Saureus_dataset.zip
+$ datasets download genome taxon "Staphylococcus aureus" --reference --filename Saureus_dataset.zip
 $ unzip Saureus_dataset -d Saureus_genome
 
 # Bowtie2
