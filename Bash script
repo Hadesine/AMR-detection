@@ -49,7 +49,7 @@ $ qualimap bamqc -bam ref_vs_reads.bam -outdir qualimap_report
 # Prokka
 $ prokka --outdir prokka_output \
          --prefix Saureus_annotation \
-         --kingdom Bateria \
+         --kingdom Bacteria \
          --genus Staphylococcus \
          --species aureus \
          --cpus 4 \
