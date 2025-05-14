@@ -41,7 +41,7 @@ $ samtools index ref_vs_reads_sorted.bam
 
 # MAPQ
 $ samtools view -q 30 -b ref_vs_reads_sorted.bam > mapq_ref_vs_reads.bam
-$ samtools view mapq_ref_vs_reads.bam | awk '{print $5}' | sort | uniq c
+$ samtools view mapq_ref_vs_reads.bam | awk '{print $5}' | sort | uniq -c
 
 # Qualimap 
 $ qualimap bamqc -bam ref_vs_reads.bam -outdir qualimap_report
