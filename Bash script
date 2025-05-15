@@ -56,4 +56,5 @@ $ prokka --outdir prokka_output \
          megahit_output/final.contigs.fa
 
 # AMRFinderPlus
-$amrfinder -p prokka_output/Saureus_annotation.faa -o amrfinder_output.tsv - O "Staphylococcus aureus"
+$amrfinder -p prokka_output/Saureus_annotation.faa -o amrfinder_output.tsv -O "Staphylococcus aureus"
+$amrfinder -n prokka_ouput/Saureus_annotation.ffn -o amrfinder_output2.tsv -O "Staphylococcus aureus"
