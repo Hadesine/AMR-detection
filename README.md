@@ -20,4 +20,5 @@ Each folder includes the genome input, analysis outputs, and a summary of findin
 - Prokka (genome annotation)
 - CARD database - RGI (Resistance Gene Identifier)
 - AMRFinderplus - (AMR gene identification)
+- Resfinder - (Acquired resistance gene identification)
 - Python -pandas matplotlib seaborn (visualization)
